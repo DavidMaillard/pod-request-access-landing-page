@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+/**
+ * @project        frontend-mentor-challenge
+ * @author         David Maillard, <maillard.david23@gmail.com>
+ * @build          Fri, Jun 25, 2021 8:22 AM ET
+ * @release        421bd00c36babadb26118a01e8721c6619c5cde9 [master]
+ * @copyright      Copyright (c) 2021, REPLACE_ME
+ *
+ */
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -6,11 +14,154 @@ body {
   min-height: 100vh;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0; }
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin: 0;
+  font-family: "Chivo", sans-serif;
+  background: #121725;
+  padding: 130px 0 165px 130px; }
+  body .page-container {
+    position: relative;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    body .page-container .main-logo {
+      position: absolute;
+      left: 0;
+      top: 0;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      height: 56px; }
+    body .page-container .bg-host {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      left: 327px; }
+      body .page-container .bg-host img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top right; }
+    body .page-container .bg-pattern {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 104px;
+      -ms-transform: translateY(50%);
+      transform: translateY(50%); }
+    body .page-container .main-container {
+      position: relative;
+      width: 100%;
+      max-width: 723px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      padding: 88px 56px 0 0;
+      margin-top: 256px;
+      background: #121725; }
+      body .page-container .main-container .main-heading {
+        max-width: 665px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 52px;
+        line-height: 62px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0 0 24px; }
+        body .page-container .main-container .main-heading span {
+          color: #54E6AF; }
+      body .page-container .main-container .main-text {
+        max-width: 445px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        color: #C2CBE5;
+        margin: 0 0 40px; }
+      body .page-container .main-container .main-form {
+        position: relative;
+        width: 100%;
+        max-width: 427px;
+        display: -ms-flexbox;
+        display: flex;
+        padding-bottom: 22px;
+        margin-bottom: 42px; }
+        body .page-container .main-container .main-form .input-container {
+          width: 100%;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+          align-items: center;
+          background: #2C344B;
+          border-radius: 28px;
+          padding: 5px; }
+          body .page-container .main-container .main-form .input-container .form-input {
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 28px;
+            color: #FFFFFF;
+            -webkit-appearance: none;
+            appearance: none;
+            padding: 0 27px; }
+            body .page-container .main-container .main-form .input-container .form-input:placeholder {
+              opacity: 0.5; }
+          body .page-container .main-container .main-form .input-container .form-button {
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            background-color: #54E6AF;
+            box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+            border-radius: 28px;
+            padding: 9px 27px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 28px;
+            color: #121725;
+            border: none;
+            -webkit-appearance: none;
+            appearance: none;
+            cursor: pointer;
+            transition: background-color ease-out .2s; }
+            body .page-container .main-container .main-form .input-container .form-button:hover {
+              background-color: #B3FFE2; }
+        body .page-container .main-container .main-form .form-error {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          display: none;
+          padding-left: 32px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          color: #FB3E3E;
+          margin: 0; }
+          body .page-container .main-container .main-form .form-error.is-active {
+            display: block; }
+      body .page-container .main-container .logos-list {
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center; }
+        body .page-container .main-container .logos-list .logo-item {
+          margin-right: 40px; }
+          body .page-container .main-container .logos-list .logo-item:last-child {
+            margin-right: 0; }
 
 
 
