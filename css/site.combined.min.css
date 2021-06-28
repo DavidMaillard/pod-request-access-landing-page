@@ -1,8 +1,8 @@
 /**
  * @project        frontend-mentor-challenge
  * @author         David Maillard, <maillard.david23@gmail.com>
- * @build          Fri, Jun 25, 2021 8:22 AM ET
- * @release        421bd00c36babadb26118a01e8721c6619c5cde9 [master]
+ * @build          Mon, Jun 28, 2021 8:20 AM ET
+ * @release        f17af6725a45014c55c8a55ffc251896edfc5a93 [master]
  * @copyright      Copyright (c) 2021, REPLACE_ME
  *
  */
@@ -20,6 +20,11 @@ body {
   font-family: "Chivo", sans-serif;
   background: #121725;
   padding: 130px 0 165px 130px; }
+  @media (max-width: 1023px) {
+    body {
+      padding: 0;
+      -ms-flex-align: start;
+      align-items: flex-start; } }
   body .page-container {
     position: relative;
     width: 100%;
@@ -29,6 +34,17 @@ body {
     align-items: flex-end;
     -ms-flex-pack: start;
     justify-content: flex-start; }
+    @media (max-width: 1023px) {
+      body .page-container {
+        position: relative;
+        z-index: 1;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding: 50px 0 0 39px; } }
     body .page-container .main-logo {
       position: absolute;
       left: 0;
@@ -36,17 +52,23 @@ body {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       height: 56px; }
+      @media (max-width: 1023px) {
+        body .page-container .main-logo {
+          position: relative;
+          -ms-transform: none;
+          transform: none;
+          margin-bottom: 152px; } }
     body .page-container .bg-host {
       position: absolute;
       right: 0;
       bottom: 0;
       top: 0;
-      left: 327px; }
-      body .page-container .bg-host img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top right; }
+      left: 327px;
+      background: url("../assets/desktop/image-host.jpg") no-repeat top right/cover; }
+      @media (max-width: 1023px) {
+        body .page-container .bg-host {
+          left: 277px;
+          background-image: url("../assets/tablet/image-host.jpg"); } }
     body .page-container .bg-pattern {
       position: absolute;
       right: 0;
@@ -54,6 +76,15 @@ body {
       height: 104px;
       -ms-transform: translateY(50%);
       transform: translateY(50%); }
+      @media (max-width: 1023px) {
+        body .page-container .bg-pattern {
+          bottom: initial;
+          right: initial;
+          top: -104px;
+          left: 30px;
+          -ms-transform: translateY(100vh);
+          transform: translateY(100vh);
+          z-index: 0; } }
     body .page-container .main-container {
       position: relative;
       width: 100%;
@@ -65,8 +96,16 @@ body {
       -ms-flex-align: start;
       align-items: flex-start;
       padding: 88px 56px 0 0;
-      margin-top: 256px;
+      margin-top: 56px;
       background: #121725; }
+      @media (max-width: 1286px) {
+        body .page-container .main-container {
+          margin-top: 286px; } }
+      @media (max-width: 1023px) {
+        body .page-container .main-container {
+          max-width: 635px;
+          padding: 93px 0 0;
+          margin-top: 0; } }
       body .page-container .main-container .main-heading {
         max-width: 665px;
         font-style: normal;
@@ -76,6 +115,12 @@ body {
         text-transform: uppercase;
         color: #FFFFFF;
         margin: 0 0 24px; }
+        @media (max-width: 1023px) {
+          body .page-container .main-container .main-heading {
+            max-width: 635px;
+            font-size: 48px;
+            line-height: 56px;
+            margin-bottom: 31px; } }
         body .page-container .main-container .main-heading span {
           color: #54E6AF; }
       body .page-container .main-container .main-text {
